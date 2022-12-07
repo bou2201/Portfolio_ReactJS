@@ -1,6 +1,6 @@
 .about {
   &-title {
-    font-size: 45px;
+    font-size: 40px;
 
     @media (max-width:600px) {
       font-size: 30px;
@@ -73,6 +73,84 @@
       span {
         font-weight: 600;
         font-size: 15px;
+      }
+    }
+  }
+
+  &-edu {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 35px;
+    backdrop-filter: blur(3px);
+
+    &-title {
+      font-size: 30px;
+
+      @media (max-width:600px) {
+        font-size: 25px;
+      }
+    }
+
+    &-item {
+      position: relative;
+      padding-left: 30px;
+      border-left: 2px solid #13E2DA;
+      width: 100%;
+
+      &-course {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        span {
+          padding: 10px 20px;
+          background: linear-gradient(to right bottom, rgba(202, 94, 238, 0.7), rgba(75, 225, 236, 0.7));
+          font-size: 14px;
+          border-radius: 6px;
+        }
+      }
+
+      &-major {
+        margin: 5px 0;
+        padding-left: 20px;
+
+        li {
+          font-size: 15px;
+          position: relative;
+          margin: 5px 0;
+
+          &::before {
+            content: '';
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 5px;
+            height: 5px;
+            border-radius: 50%;
+            background-color: #fff;
+          }
+        }
+      }
+
+      &-intro {
+        margin: 20px 0;
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.7);
+      }
+
+      &::before {
+        content: '';
+        position: absolute;
+        width: 20px;
+        height: 20px;
+        border-radius: 50px;
+        left: -12px;
+        top: 0;
+        background: linear-gradient(to bottom, #9055FF, #13E2DA);
+        z-index: 1;
       }
     }
   }
