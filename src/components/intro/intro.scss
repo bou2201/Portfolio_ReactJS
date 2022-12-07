@@ -1,0 +1,190 @@
+@import "animation.scss";
+
+.intro {
+  padding-top: 150px;
+
+  @media (max-width: 900px) {
+    padding-top: 100px;
+  }
+
+  &-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+
+    @media (max-width:900px) {
+      align-items: center;
+    }
+
+    p {
+      font-size: 40px;
+
+      span {
+        background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+      }
+
+      @media (max-width: 600px) {
+        font-size: 26px;
+      }
+    }
+
+    .hand {
+      width: 30px;
+      height: 30px;
+      animation-name: waveHand;
+      animation-duration: 2.1s;
+      animation-iteration-count: infinite;
+      transform-origin: 70% 70%;
+      display: inline-block;
+
+      @media (max-width:600px) {
+        width: 20px;
+        height: 20px;
+      }
+    }
+
+    .typing {
+      display: inline-block;
+      font-weight: 700;
+
+      &-run {
+        overflow: hidden;
+        background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-weight: 700;
+        white-space: nowrap;
+        border-right: 4px #fff solid;
+        animation:
+          textRunning 6s linear infinite alternate,
+          blinking 2s infinite;
+      }
+    }
+
+    .resume {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      margin-top: 30px;
+
+      .download,
+      .preview {
+        display: inline-block;
+        padding: 15px 35px;
+        border-radius: 0 100rem 100rem 100rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: all linear 0.3s;
+        gap: 10px;
+
+        @media (max-width:600px) {
+          font-size: 14px;
+        }
+      }
+
+      .download {
+        background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+
+        &:hover {
+          transform: translateY(-5px);
+        }
+      }
+
+      .preview {
+        background: transparent;
+
+        &:hover {
+          background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+          background-clip: text;
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          transform: translateY(-5px);
+        }
+      }
+    }
+  }
+
+  &-avatar {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+
+    @media (max-width: 900px) {
+      max-width: 500px;
+      max-height: 500px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+    }
+
+    img {
+      border-radius: 38% 62% 48% 52% / 45% 34% 66% 55%;
+      animation: upping 2s linear infinite alternate;
+    }
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: -10%;
+      width: 100%;
+      background-image: linear-gradient(to top right, rgba(144, 85, 255, 0.2), rgba(19, 226, 218, 0.2));
+      border-radius: 36% 64% 48% 52% / 64% 37% 63% 36%;
+      height: 120px;
+      z-index: -1;
+      backdrop-filter: blur(4px);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px,
+        rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px,
+        rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    }
+  }
+}
+
+.scroll {
+  margin-top: 80px;
+
+  @media (max-width: 900px) {
+    display: none;
+  }
+
+  &-text {
+    font-size: 13px;
+    position: relative;
+
+    &::before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: -50%;
+      width: 18px;
+      height: 32px;
+      border: 2px solid #fff;
+      border-radius: 100rem;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 50%;
+      right: -37%;
+      width: 2px;
+      height: 8px;
+      background-color: #fff;
+      border-radius: 100rem;
+      animation: scrollAnimation 1s infinite ease-in alternate;
+    }
+  }
+}

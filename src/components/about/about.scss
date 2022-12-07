@@ -1,0 +1,79 @@
+.about {
+  &-title {
+    font-size: 45px;
+
+    @media (max-width:600px) {
+      font-size: 30px;
+    }
+
+    span {
+      background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+      background-clip: text;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &-objectives {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    opacity: 0.8;
+    font-style: italic;
+    font-size: 14px;
+  }
+
+  &-info {
+    padding: 20px;
+    padding-bottom: 60px;
+    position: relative;
+    background-clip: padding-box;
+    border: 8px solid transparent;
+    background-color: rgba(9, 12, 43, 0.7);
+    border-radius: 100rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+      rgba(0, 0, 0, 0.12) 0px -12px 30px,
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px,
+      rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      z-index: -1;
+      margin: -8px;
+      border-radius: inherit;
+      background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+
+    }
+
+    &-avatar {
+      border-radius: 50%;
+      overflow: hidden;
+      max-width: 300px;
+      max-height: 300px;
+    }
+
+    &-inner {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      p {
+        opacity: 0.7;
+        font-size: 13px;
+      }
+
+      span {
+        font-weight: 600;
+        font-size: 15px;
+      }
+    }
+  }
+}
