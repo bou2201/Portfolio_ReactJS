@@ -1,0 +1,51 @@
+@import "../mixins.scss";
+
+.skill {
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 15px;
+
+    @media (max-width: 900px) {
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+
+    }
+
+    @media (max-width: 600px) {
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+
+    }
+
+    &-item {
+      padding: 20px;
+      border-radius: 6px;
+      border: 1px solid rgba(19, 226, 219, 0.1);
+      height: 140px;
+      transition: all 0.25s linear;
+      overflow: hidden;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+      @include flexRow(center, center);
+
+      @media (max-width: 600px) {
+        height: 100px;
+      }
+
+      img {
+        height: 72px;
+        transition: all 0.25s ease-out;
+
+        @media (max-width: 600px) {
+          height: 52px;
+        }
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+
+      &:hover img {
+        transform: scale(1.2);
+      }
+    }
+  }
+}

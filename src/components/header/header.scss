@@ -38,6 +38,10 @@ svg {
       }
     }
   }
+
+  @media (max-width:600px) {
+    font-size: 68px;
+  }
 }
 
 @-webkit-keyframes stroke {

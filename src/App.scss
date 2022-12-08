@@ -1,0 +1,15 @@
+.section-title {
+  font-size: 40px;
+  margin-bottom: 20px;
+
+  @media (max-width:600px) {
+    font-size: 30px;
+  }
+
+  span {
+    background: linear-gradient(to right bottom, #9055FF, #13E2DA);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}

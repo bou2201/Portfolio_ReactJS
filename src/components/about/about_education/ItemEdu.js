@@ -1,11 +1,11 @@
 import React from "react";
 
-function Education(props) {
+const ItemEdu = (props) => {
   return (
     <div className="about-edu-item">
       <div className="about-edu-item-course">
         <h3>{props.name}</h3>
-        <span>{props.time}</span>
+        <span>{props.dateTime}</span>
       </div>
       <p className="about-edu-item-intro">{props.intro}</p>
       <ul className="about-edu-item-major">
@@ -17,4 +17,4 @@ function Education(props) {
   );
 }
 
-export default Education;
+export default ItemEdu;

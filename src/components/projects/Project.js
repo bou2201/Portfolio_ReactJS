@@ -5,7 +5,7 @@ const Project = () => {
   return (
     <section id="project" className="project">
       <Container maxWidth="lg" sx={{ px: { xl: 0, xs: 2 } }}>
-        <h1 className="about-title">
+        <h1 className="section-title">
           <span>My</span> projects
         </h1>
       </Container>
