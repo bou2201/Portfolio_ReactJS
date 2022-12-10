@@ -9,7 +9,23 @@
   }
 
   &-content {
+    position: relative;
     @include flexColumn(center, flex-start);
+
+    &::before {
+      content: '';
+      position: absolute;
+      left: 130px;
+      bottom: -65%;
+      height: 243px;
+      width: 87px;
+      transform: rotateX(180deg) rotateZ(90deg);
+      background: url('../../assets/arrow1.png');
+
+      @media (max-width: 900px) {
+        display: none;
+      }
+    }
 
     @media (max-width:900px) {
       align-items: center;

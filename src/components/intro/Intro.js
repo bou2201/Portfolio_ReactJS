@@ -16,23 +16,25 @@ const Intro = () => {
         >
           <Grid item md={7} xs={12}>
             <div className="intro-content">
-              <p style={{ display: "flex", alignItems: "center", gap: 20 }}>
-                Hi There
-                <img src={Hand} alt="hand" className="hand" />
-              </p>
-              <p>
-                I'm <span>Nguyen Lam Chuc</span>
-              </p>
-              <div className="typing">
-                <p className="typing-run">I'm Front-end Developer.</p>
-              </div>
-              <div className="resume">
-                <a href="/" className="download">
-                  Download CV <CloudDownloadIcon />
-                </a>
-                <a href="/" className="preview">
-                  Preview
-                </a>
+              <div>
+                <p style={{ display: "flex", alignItems: "center", gap: 20 }}>
+                  Hi There
+                  <img src={Hand} alt="hand" className="hand" />
+                </p>
+                <p>
+                  I'm <span>Nguyen Lam Chuc</span>
+                </p>
+                <div className="typing">
+                  <p className="typing-run">I'm Front-end Developer.</p>
+                </div>
+                <div className="resume">
+                  <a href="/" className="download">
+                    Download CV <CloudDownloadIcon />
+                  </a>
+                  <a href="/" className="preview">
+                    Preview
+                  </a>
+                </div>
               </div>
             </div>
           </Grid>
