@@ -21,11 +21,9 @@ const ProjectItem = (props) => {
           <a href={props.source} target="_blank" rel="noreferrer">
             <GitHubIcon />
           </a>
-          {props.link && (
-            <a href={props.link} target="_blank" rel="noreferrer">
-              <OpenInNewIcon />
-            </a>
-          )}
+          <a href={props.link} target="_blank" rel="noreferrer">
+            <OpenInNewIcon />
+          </a>
         </div>
       </div>
     </div>

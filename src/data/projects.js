@@ -19,12 +19,13 @@ export const projects = [
       "API",
     ],
     source: "https://github.com/bou2201/ShoeStoreWebsite",
+    link: undefined,
   },
   {
     image: Volunteer,
     title: "Volunteer Website",
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut, pariatur officiis ipsam sunt labore modi asperiores illo. Incidunt molestiae natus repudiandae ipsam. Harum nemo nam fugit provident eos quas nobis",
+      "Project is in progress, collaboratively creating a volunteer website for the kids. The purpose is to create a place where people can learn more about the group and support together",
     technologies: ["HTML", "CSS", "SASS/SCSS", "Bootstrap", "Javascript"],
     source: "https://github.com/khoangtroicuabe/khoangtroicuabe.github.io",
     link: "https://khoangtroicuabe.org/",
@@ -36,5 +37,6 @@ export const projects = [
       "A menswear app project that enables you to login, view products, view transaction history, search & add, export order by admin. Actor this app is seller",
     technologies: ["C#", "Three-layer architecture", "MySQL"],
     source: "https://github.com/bou2201/Project_1",
+    link: undefined,
   },
 ];

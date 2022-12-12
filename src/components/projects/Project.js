@@ -22,7 +22,7 @@ const Project = () => {
                 description={project.description}
                 technologies={project.technologies}
                 source={project.source}
-                link={project.link || ""}
+                link={project.link}
               />
             ))}
         </div>

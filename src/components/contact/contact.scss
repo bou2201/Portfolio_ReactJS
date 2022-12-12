@@ -132,6 +132,10 @@
             background: url('../../assets/arrow2.png');
             background-repeat: no-repeat;
             pointer-events: none;
+
+            @media (max-width: 600px) {
+              display: none;
+            }
           }
 
           svg {

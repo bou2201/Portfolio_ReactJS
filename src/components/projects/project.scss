@@ -6,20 +6,47 @@
     display: flex;
     flex-direction: column;
     gap: 6rem;
-  }
 
+    @media (max-width: 1100px) {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 2rem 2.5rem;
+    }
+
+    @media (max-width: 768px) {
+      margin-top: 2rem;
+      grid-template-columns: repeat(1, minmax(0, 1fr));
+    }
+  }
+  
   &-item {
     display: flex;
     position: relative;
+    
+    @media (max-width: 1100px) {
+      flex-direction: column;
+      overflow: hidden;
+      background-color: #112240;
+      box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+      border-radius: 6px;
+    }
 
     &:nth-child(even) {
       flex-direction: row-reverse;
+
+      @media (max-width: 1100px) {
+        flex-direction: column;
+      }
     }
 
     &:nth-child(even) &-content {
       text-align: left;
       position: absolute;
       left: 0;
+
+      @media (max-width: 1100px) {
+        position: static;
+      }
     }
 
     &:nth-child(even) &-content .content-tech {
@@ -31,11 +58,13 @@
       justify-content: flex-start;
     }
 
-    // &:nth-child(even) {}
-
     &-image {
       flex: 0 0 60%;
       position: relative;
+
+      @media (max-width: 1100px) {
+        flex: unset;
+      }
 
       &::before {
         content: "";
@@ -54,6 +83,13 @@
       right: 0;
       z-index: 10;
 
+      @media (max-width: 1100px) {
+        transform: unset;
+        position: static;
+        text-align: left;
+        padding: 20px;
+      }
+
       .content-num {
         font-size: 15px;
       }
@@ -63,6 +99,15 @@
         margin-top: 5px;
         margin-bottom: 15px;
         @include textGradient(to right bottom);
+
+        @media (max-width: 1100px) {
+          font-size: 30px;
+          margin-bottom: 10px;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 25px;
+        }
       }
 
       .content-desc {
@@ -78,6 +123,18 @@
           rgba(0, 0, 0, 0.1) 0px 2px 4px 0px,
           rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
         margin-bottom: 20px;
+
+        @media (max-width: 1100px) {
+          width: auto;
+          box-shadow: unset;
+          background-color: unset;
+          padding: unset;
+        }
+
+        @media (max-width: 600px) {
+          font-size: 14px;
+          line-height: 1.6;
+        }
       }
 
       .content-tech {
@@ -87,6 +144,12 @@
         width: 30rem;
         float: right;
         // padding-left: 10px;
+
+        @media (max-width: 1100px) {
+          float: unset;
+          justify-content: flex-start;
+          width: auto;
+        }
 
         span {
           border-radius: 100rem;
@@ -102,6 +165,10 @@
         justify-content: flex-end;
         align-items: center;
         gap: 10px;
+
+        @media (max-width: 1100px) {
+          justify-content: flex-start;
+        }
 
         a {
           opacity: 0.9;
