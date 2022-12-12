@@ -1,6 +1,6 @@
 import React from "react";
 import ItemEdu from "./ItemEdu";
-import { courses } from "./EduData";
+import { courses } from "../../../data";
 
 const Edu = () => {
   return (

@@ -1,7 +1,6 @@
 import React from "react";
 import { Container } from "@mui/material";
-import { skills } from "./data/SkillData";
-import { tools } from "./data/ToolData";
+import { skills, tools} from "../../data"
 import ItemSkill from "./ItemSkill";
 import "./skill.scss";
 

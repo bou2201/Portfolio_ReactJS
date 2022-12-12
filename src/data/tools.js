@@ -1,7 +1,7 @@
-import Github from "../../../assets/skills/github.png";
-import VsCode from "../../../assets/skills/vscode.png";
-import Figma from "../../../assets/skills/figma.png";
-import Vercel from "../../../assets/skills/vercel.png";
+import Github from "../assets/skills/github.png";
+import VsCode from "../assets/skills/vscode.png";
+import Figma from "../assets/skills/figma.png";
+import Vercel from "../assets/skills/vercel.png";
 
 export const tools = [
   {

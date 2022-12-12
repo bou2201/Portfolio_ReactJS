@@ -18,8 +18,8 @@
     }
 
     ul {
-      margin-bottom: 10px;
-      @include flexColumn(center, center, 10px);
+      margin-bottom: 20px;
+      @include flexColumn(center, center, 20px);
 
       li {
         color: rgba(255, 255, 255, 0.8);
@@ -109,7 +109,7 @@
           background: linear-gradient(to right bottom, #9055FF, #13E2DA);
           cursor: pointer;
           font-size: 17px;
-          font-weight: bold;
+          font-family: 'Poppins', sans-serif;
           box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 2px,
             rgba(0, 0, 0, 0.07) 0px 2px 4px,
             rgba(0, 0, 0, 0.07) 0px 4px 8px,
@@ -117,7 +117,7 @@
             rgba(0, 0, 0, 0.07) 0px 16px 32px,
             rgba(0, 0, 0, 0.07) 0px 32px 64px;
           transition: all 0.25s linear;
-          @include flexRow(center, flex-start, 10px);
+          @include flexRow(center, baseline, 10px);
           position: relative;
 
           &::before {

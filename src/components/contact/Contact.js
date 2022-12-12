@@ -10,16 +10,21 @@ const CssTextField = styled(TextField)({
   "& label": {
     color: "#fff",
     fontSize: 15,
+    fontFamily: "'Poppins', sans-serif",
   },
   "& .MuiInputBase-input": {
     color: "#fff",
     padding: "4px 0 10px",
+    fontFamily: "'Poppins', sans-serif",
   },
   "& .MuiInput-root:before": {
     borderBottom: "1px solid rgba(255, 255, 255, 0.1)",
   },
   "& .MuiInput-root:hover:not(.Mui-disabled):before": {
-    borderBottomColor: "#fff",
+    borderBottomColor: "rgba(255, 255, 255, 0.6)",
+  },
+  "& .MuiFormLabel-root.Mui-focused": {
+    fontWeight: "bold",
   },
 });
 
