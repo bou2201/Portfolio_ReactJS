@@ -3,6 +3,7 @@ import { Grid, Container } from "@mui/material";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Avatar from "../../assets/avatar-introduct.jpg";
 import Hand from "../../assets/hand.png";
+import CV from "../../assets/NguyenLamChuc-Intern-FE.pdf";
 import "./intro.scss";
 
 const Intro = () => {
@@ -28,10 +29,13 @@ const Intro = () => {
                   <p className="typing-run">I'm Front-end Developer.</p>
                 </div>
                 <div className="resume">
-                  <a href="/" className="download">
+                  <a href={CV} className="download" download>
                     Download CV <CloudDownloadIcon />
                   </a>
-                  <a href="/" className="preview">
+                  <a
+                    href="https://drive.google.com/file/d/1-9449lkV6J3N24yNNGW7fo5bTbf7_c61/view"
+                    className="preview"
+                  >
                     Preview
                   </a>
                 </div>
