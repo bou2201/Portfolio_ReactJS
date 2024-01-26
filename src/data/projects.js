@@ -1,8 +1,25 @@
 import ShoeStore from "../assets/project/shoestore.png";
-import Volunteer from "../assets/project/ktcb.png";
 import MenswearApp from "../assets/project/menswear_app.png";
+import Techcell from "../assets/project/techcell.png";
 
 export const projects = [
+  {
+    image: Techcell,
+    title: "Techcell Dashboard",
+    description:
+      "Fullstack project for graduation, this e-commerce website specializes in providing phone services. I am responsible for the website admin part",
+    technologies: [
+      "Nextjs",
+      "Material UI",
+      "Formik",
+      "Redux Toolkit",
+      "Nestjs",
+      "Microservice",
+      "MongoDB"
+    ],
+    source: "https://github.com/TechCell-Project/tech-cell-client-management",
+    link: "https://admin.techcell.cloud",
+  },
   {
     image: ShoeStore,
     title: "Shoe Store Website",
@@ -20,15 +37,6 @@ export const projects = [
     ],
     source: "https://github.com/bou2201/ShoeStoreWebsite",
     link: undefined,
-  },
-  {
-    image: Volunteer,
-    title: "Volunteer Website",
-    description:
-      "Project is in progress, collaboratively creating a volunteer website for the kids. The purpose is to create a place where people can learn more about the group and support together",
-    technologies: ["HTML", "CSS", "SASS/SCSS", "Bootstrap", "Javascript"],
-    source: "https://github.com/khoangtroicuabe/khoangtroicuabe.github.io",
-    link: "https://khoangtroicuabe.org/",
   },
   {
     image: MenswearApp,
