@@ -1,8 +1,8 @@
-import React from "react";
-import { Container } from "@mui/material";
-import { skills, tools} from "../../data"
-import ItemSkill from "./ItemSkill";
-import "./skill.scss";
+import React from 'react';
+import { Container } from '@mui/material';
+import { skills, tools } from '../../data';
+import ItemSkill from './ItemSkill';
+import './skill.scss';
 
 const Skill = () => {
   return (
@@ -12,19 +12,17 @@ const Skill = () => {
           Skill <span>sets</span>
         </h1>
         <div className="skill-list">
-          {skills &&
-            skills.map((skill, index) => (
-              <ItemSkill key={index} title={skill.title} image={skill.image} />
-            ))}
+          {skills.map((skill) => (
+            <ItemSkill key={skill.title} title={skill.title} image={skill.image} />
+          ))}
         </div>
-        <h1 className="section-title" style={{paddingTop: 50}}>
+        <h1 className="section-title" style={{ paddingTop: 50 }}>
           <span>Some</span> tools
         </h1>
         <div className="skill-list">
-          {tools &&
-            tools.map((tool, index) => (
-              <ItemSkill key={index} title={tool.title} image={tool.image} />
-            ))}
+          {tools.map((tool) => (
+            <ItemSkill key={tool.title} title={tool.title} image={tool.image} />
+          ))}
         </div>
       </Container>
     </section>
