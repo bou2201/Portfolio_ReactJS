@@ -10,9 +10,10 @@ export const projects = [
       "Fullstack project for graduation, this e-commerce website specializes in providing phone services. I am responsible for the website admin part",
     technologies: [
       "Nextjs",
-      "Material UI",
-      "Formik",
-      "Redux Toolkit",
+      "Shadcn/ui",
+      "React hook form",
+      "Tailwindcss",
+      "Zustand",
       "Nestjs",
       "Microservice",
       "MongoDB"

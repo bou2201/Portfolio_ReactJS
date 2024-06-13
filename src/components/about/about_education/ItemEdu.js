@@ -9,9 +9,9 @@ const ItemEdu = (props) => {
       </div>
       <p className="about-edu-item-intro">{props.intro}</p>
       <ul className="about-edu-item-major">
-        {props.major1 && <li>{props.major1}</li>}
-        {props.major2 && <li>{props.major2}</li>}
-        {props.major3 && <li>{props.major3}</li>}
+        {props.major_1 && <li>{props.major_1}</li>}
+        {props.major_2 && <li>{props.major_2}</li>}
+        {props.major_3 && <li>{props.major_3}</li>}
       </ul>
     </div>
   );

@@ -4,9 +4,7 @@ export const courses = [
     dateTime: "Oct 2020 - Present",
     intro:
       "VTC Academy is an IT training unit that already exists in Hanoi and Ho Chi Minh City since 2010. After more than 10 years of operation, the academy is the birthplace of thousands of programming engineers, 3D graphic designers and AI engineers",
-    major_1: "Major: Basis of programming",
-    major_2: "Major: Web application development",
-    major_3: "Major: Software programming (Full-Stack)",
+    major_1: "Major: Web application development",
   },
   {
     name: "Evondev",

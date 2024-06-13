@@ -69,8 +69,9 @@
         font-weight: 700;
         white-space: nowrap;
         border-right: 4px #fff solid;
+        padding-right: 5px;
         animation:
-          textRunning 6s linear infinite alternate,
+          // textRunning 6s linear infinite alternate,
           blinking 2s infinite;
       }
     }

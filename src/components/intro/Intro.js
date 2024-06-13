@@ -3,7 +3,7 @@ import { Grid, Container } from "@mui/material";
 import CloudDownloadIcon from "@mui/icons-material/CloudDownload";
 import Avatar from "../../assets/avatar-introduct.jpg";
 import Hand from "../../assets/hand.png";
-import CV from "../../assets/LamChuc_Fresher_FE.pdf";
+import CV from "../../assets/ChucNguyen_Fresher_FE.pdf";
 import "./intro.scss";
 
 const Intro = () => {
@@ -33,7 +33,7 @@ const Intro = () => {
                     Download CV <CloudDownloadIcon />
                   </a>
                   <a
-                    href="https://drive.google.com/file/d/1RR7Itrx0X1ISEi9rimnH30hNwr1q37Ak/view"
+                    href="https://www.cakeresume.com/chuc-nguyen-5f8b78"
                     className="preview"
                   >
                     Preview
